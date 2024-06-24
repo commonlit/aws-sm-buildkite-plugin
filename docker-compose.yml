@@ -1,4 +1,4 @@
-version: '2'
+version: "2"
 services:
   tests:
     build:
@@ -7,7 +7,6 @@ services:
       - ".:/plugin:ro"
   lint:
     image: buildkite/plugin-linter
-    command: ['--name', 'seek-oss/aws-sm']
+    command: ["--name", "commonlit/aws-sm"]
     volumes:
       - ".:/plugin:ro"
-
